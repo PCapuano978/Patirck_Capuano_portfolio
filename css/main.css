@@ -16,6 +16,23 @@ html {
     line-height: 1.4;
 }
 
+h1#name {
+    font-size: 5em;
+    outline-color: white;
+    outline: 10px;
+    text-align: center; 
+    kerning: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+    align-content: center;
+    width: 85em;
+    height: 60em;
+    border: lightgreen;
+    border-style: inset;
+    border-width: 10px;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
