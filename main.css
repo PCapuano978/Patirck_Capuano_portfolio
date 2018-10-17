@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+html {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 150, 100);
+}
+
+/* Navigation Styles */
+
+nav > h2 {
+    color: brown;
+}
+
+    /* Section Styles */
+
+body {
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+    section > img {
+        width: 30em;
+        height: 25em;
+        align-content: center;
+    }
+
+    /* Blockquote Styles */
+
+blockquote{
+    font-family: 'Champagne', Verdana, 'Geneva', Tahoma, sans-serif;
+    font-size: 1.7em;
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+    /* Footer Style */
+
+footer {
+    text-align: center;
+}
