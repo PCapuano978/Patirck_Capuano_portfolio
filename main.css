@@ -5,7 +5,7 @@
 html {
     background-image: url("elbow_deep_in_code.jpg");
     background-repeat: round;
-    background-size: 20%;
+    background-size: 2%;
 }
 
 body {
@@ -15,34 +15,35 @@ body {
 /* Header & Nav Styles */
 
 h1#name {
-    font-size: 3em;
+    font-size: 4em;
     text-shadow: 2px 2px black;
-    padding: 3em;
+    padding: 2em;
     margin: 0;
     background-image: radial-gradient(rgba(0, 0, 0, .7) 20%, rgba(255, 255, 255, .7) 100%);
     color: darkgray;
     text-align: center;
 }
 
-header {
-    height: 5em;
-}
-
 nav ul {
-    display: block;
+    margin: 0;
     list-style-type: none;
     font-size: 1em;
     clear: both;
     font-family: 'Courier New', Courier, monospace;
-    color: blue;
-    background-color: azure;
+    color: lavender;
+    background-image: url("pixel_back.jpg");
+    background-size: 5%;
 }
 
-nav a:visited {
-    color: azure;
+nav ul a {
+    display: inline-block;
 }
 
-nav a:hover {
+nav ul a:visited {
+    color: ;
+}
+
+nav ul a:hover {
     color: black;
 }
 
