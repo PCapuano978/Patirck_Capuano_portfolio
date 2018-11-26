@@ -6,86 +6,121 @@ html {
     background-image: url("elbow_deep_in_code.jpg");
     background-repeat: round;
     background-size: 2%;
+    min-width: 550px;
+    position: relative;
 }
 
 body {
     width: 100%;
 }
 
-/* Header & Nav Styles */
+/* Home & Nav Styles */
 
 h1#name {
-    font-size: 4em;
-    text-shadow: 2px 2px black;
-    padding: 2em;
-    margin: 0;
-    background-image: radial-gradient(rgba(0, 0, 0, .7) 20%, rgba(255, 255, 255, .7) 100%);
     color: darkgray;
     text-align: center;
+    font-size: 5em;
+    text-shadow: 2px 2px black;
 }
+
+
+section#home {
+    padding: 6em 0em 6em 0em;
+    margin: 0;
+    background-image: radial-gradient(rgba(0, 0, 0, .7) 40%, rgba(255, 255, 255, .5) 100%);
+    filter: drop-shadow(5px 5px 4px rgba(255, 255, 255, .7));
+}
+
 
 nav ul {
-    margin: 0;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    margin: 0 auto;
     list-style-type: none;
-    font-size: 1em;
-    clear: both;
     font-family: 'Courier New', Courier, monospace;
-    color: lavender;
     background-image: url("pixel_back.jpg");
-    background-size: 5%;
+    background-size: 2%;
+    position: fixed;
+    z-index: 100;
+    border: solid 1px aqua;
 }
 
-nav ul a {
+nav li {
+    padding: 0 3%;
+    text-align: center;
     display: inline-block;
 }
 
-nav ul a:visited {
-    color: ;
+nav li a {
+    text-decoration: none;
+    color: lavender; 
+    text-shadow: 1px 1px black;   
+    font-weight: bold;
+    font-size: 2em;
 }
 
 nav ul a:hover {
     color: black;
+    text-shadow: 1px 1px white;
 }
 
-/* Grid Based Styles */
+/* About Styles */
 
-div {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    clear: right;
+section#about {
+    background-image: url("pixel_back.jpg");
+    background-size: 1%;
+    border: inset darkgray 2px;
+}
+
+#about h1 {
+    color: darkgray;
     text-align: center;
+    font-size: 2.5em;
+    text-shadow: 2px 2px black;
 }
 
-div a {
-    text-decoration: none;
+/* Resume Styles */
+
+section#resume {
+    background-image: url("pixel_back.jpg");
+    background-size: 1%;
+    border: inset darkgray 2px;
 }
 
-div a:visited {
-    color: burlywood;
-}
-
-div a:hover {
-    color: brown;
-}
-
-/* Section Styles */
-
-h1.main {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3em;
+#resume h1 {
+    color: darkgray;
     text-align: center;
-    color: azure;
+    font-size: 2.5em;
+    text-shadow: 2px 2px black;
 }
 
-h2.heading {
-    size: 7em;
-    float: left;
+/* Skillset Styles */
+
+section#skills {
+    background-image: url("pixel_back.jpg");
+    background-size: 1%;
+    border: inset darkgray 2px;
 }
 
-h2 img {
-    float: right;
-    width: 3em;
-    height: 3em;
-    border: .1em;
-    border-style: inset;
-    border-color: aqua
+#skills h1 {
+    color: darkgray;
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: 2px 2px black;
+}
+
+/* Contact Styles */
+
+footer#contact {
+    background-image: url("pixel_back.jpg");
+    background-size: 1%;
+    border: inset darkgray 2px;
+}
+
+#contact h1 {
+    color: darkgray;
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: 2px 2px black;
 }
