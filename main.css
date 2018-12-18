@@ -1,6 +1,8 @@
 @charset "utf-8";
 
+
 /* Universal Styles */
+
 
 html {
     background-image: url("elbow_deep_in_code.jpg");
@@ -19,7 +21,25 @@ body {
     clear: both;
 }
 
+hr {
+    text-align: center;
+    border-color: black;
+
+    width: 25%;
+    height: 1px;
+    margin-bottom: 1.5em;
+}
+
+hr.pagetop {
+    margin-top: 3em;
+}
+
+hr.pagebottom {
+    margin-bottom: 3em;
+}
+
 /* Home & Nav Styles */
+
 
 h1#name {
     padding-top: 1.7em;
@@ -38,10 +58,9 @@ section#home {
     filter: drop-shadow(5px 5px 4px rgba(255, 255, 255, .7));
 }
 
-
 nav ul {
     text-align: center;
-    padding: .8em;
+    padding: 0em .8em 1em .8em;
     width: 100%;
     height: 1em;
     margin: 0 auto;
@@ -57,7 +76,6 @@ nav ul {
 nav li {
     padding: 0 3%;
     text-align: center;
-    vertical-align: middle;
     display: inline-block;
 }
 
@@ -74,7 +92,9 @@ nav ul a:hover {
     text-shadow: 1px 1px white;
 }
 
+
 /* About Styles */
+
 
 section#about {
     background-image: url("pixel_back_brown.jpg");
@@ -86,15 +106,16 @@ section#about {
     text-align: center;
     float: center;
     color: darkgray;
-    padding-top: 1em;
-    font-size: 2.5em;
+    font-size: 3em;
     text-shadow: 2px 2px black;
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: black;
 }
 
 #about h2 {
     text-align: center;
     color: darkgray;
-    font-size: 2em;
+    font-size: 2.5em;
     text-shadow: 2px 2px black;
 }
 
@@ -104,22 +125,16 @@ section#about {
 }
 
 #about div.text {
-    padding: 1%;
-    font-size: 1.25em;
-    color: darkgray;
-    outline: 1px black;
-
-}
-
-#about hr {
-    text-align: center;
-    border-color: turquoise;
-    width: 25%;
-    height: 1px;
-    margin-bottom: 1.5em;
+    padding: 2%;
+    font-size: 1.7em;
+    color: black;
+    text-shadow: 1px 1px;
+    -webkit-text-stroke: .3px;
+    -webkit-text-fill-color: darkgray;
 }
 
 /* Education Styles */
+
 
 section#education {
     background-image: url("pixel_back_purple.jpg");
@@ -132,9 +147,26 @@ section#education {
     text-align: center;
     font-size: 2.5em;
     text-shadow: 2px 2px black;
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: black;
+}
+
+#education div.text {
+    padding: 2%;
+    font-size: 1.7em;
+    color: black;
+    text-shadow: 1px 1px;
+    -webkit-text-stroke: .3px;
+    -webkit-text-fill-color: darkgray;
+}
+
+#education img {
+    float: left;
+    padding: 0 3% 3%;
 }
 
 /* Work Styles */
+
 
 section#work {
     background-image: url("pixel_back_green.jpg");
@@ -147,9 +179,26 @@ section#work {
     text-align: center;
     font-size: 2.5em;
     text-shadow: 2px 2px black;
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: black;
+}
+
+#work div.text {
+    padding: 2%;
+    font-size: 1.7em;
+    color: black;
+    text-shadow: 1px 1px;
+    -webkit-text-stroke: .3px;
+    -webkit-text-fill-color: darkgray;
+}
+
+#work img {
+    float: right;
+    padding: 0 3% 3%;
 }
 
 /* Skillset Styles */
+
 
 section#skills {
     background-image: url("pixel_back_yellow.jpg");
@@ -162,9 +211,26 @@ section#skills {
     text-align: center;
     font-size: 2.5em;
     text-shadow: 2px 2px black;
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: black;
+}
+
+#skills div.text {
+    padding: 2%;
+    font-size: 1.7em;
+    color: black;
+    text-shadow: 1px 1px;
+    -webkit-text-stroke: .3px;
+    -webkit-text-fill-color: darkgray;
+}
+
+#skills img {
+    float: left;
+    padding: 0 3% 3%;
 }
 
 /* Contact Styles */
+
 
 footer#contact {
     background-image: url("pixel_back_blue.jpg");
@@ -177,8 +243,23 @@ footer#contact {
     text-align: center;
     font-size: 2.5em;
     text-shadow: 2px 2px black;
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: black;
 }
 
+#contact div.text {
+    padding: 2%;
+    font-size: 1.7em;
+    color: black;
+    text-shadow: 1px 1px;
+    -webkit-text-stroke: .3px;
+    -webkit-text-fill-color: darkgray;
+}
+
+#contact img {
+    float: right;
+    padding: 0 3% 3%;
+}
 
 
 /* Create a personal resume website of no less than 4 complete pages using HTML5 and CSS3
