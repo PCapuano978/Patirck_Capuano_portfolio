@@ -6,7 +6,6 @@ html {
     background-image: url("elbow_deep_in_code.jpg");
     background-repeat: round;
     background-size: 2%;
-    min-width: 550px;
     position: relative;
 }
 
@@ -14,20 +13,28 @@ body {
     width: 100%;
 }
 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* Home & Nav Styles */
 
 h1#name {
+    padding-top: 1.7em;
+    padding-bottom: 1.7em;
     color: darkgray;
     text-align: center;
     font-size: 5em;
-    text-shadow: 2px 2px black;
-    opacity: .6;
+    text-shadow: 3px 3px black;
+    opacity: 1;
 }
 
 section#home {
     padding: 6em 0em 6em 0em;
     margin: 0;
-    background-image: radial-gradient(rgba(0, 0, 0, .7) 40%, rgba(255, 255, 255, .5) 100%);
+    background-image: radial-gradient(rgba(0, 0, 0, .7) 40%, rgba(255, 255, 255, .4) 60%, rgba(0, 0, 0, .7) 80%, rgba(255, 255, 255, .40) 100%);
     filter: drop-shadow(5px 5px 4px rgba(255, 255, 255, .7));
 }
 
@@ -40,7 +47,7 @@ nav ul {
     margin: 0 auto;
     list-style-type: none;
     font-family: 'Courier New', Courier, monospace;
-    background-image: url("pixel_back.jpg");
+    background-image: url("pixel_back_blue.jpg");
     background-size: 2%;
     position: fixed;
     z-index: 100;
@@ -50,6 +57,7 @@ nav ul {
 nav li {
     padding: 0 3%;
     text-align: center;
+    vertical-align: middle;
     display: inline-block;
 }
 
@@ -69,14 +77,16 @@ nav ul a:hover {
 /* About Styles */
 
 section#about {
-    background-image: url("pixel_back.jpg");
+    background-image: url("pixel_back_brown.jpg");
     background-size: 1%;
     border: inset darkgray 2px;
 }
 
 #about h1 {
     text-align: center;
-    color: gray;
+    float: center;
+    color: darkgray;
+    padding-top: 1em;
     font-size: 2.5em;
     text-shadow: 2px 2px black;
 }
@@ -88,30 +98,51 @@ section#about {
     text-shadow: 2px 2px black;
 }
 
-#about p {
+#about img {
+    float: right;
+    padding: 0 3% 3%;
+}
+
+#about div.text {
+    padding: 1%;
     font-size: 1.25em;
     color: darkgray;
-    text-shadow: 1px 1px;
-    text-align: center;
+    outline: 1px black;
+
 }
 
 #about hr {
     text-align: center;
-    border-color: brown;
+    border-color: turquoise;
     width: 25%;
     height: 1px;
     margin-bottom: 1.5em;
 }
 
-/* Resume Styles */
+/* Education Styles */
 
-section#resume {
-    background-image: url("pixel_back.jpg");
+section#education {
+    background-image: url("pixel_back_purple.jpg");
     background-size: 1%;
     border: inset darkgray 2px;
 }
 
-#resume h1 {
+#education h1 {
+    color: darkgray;
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: 2px 2px black;
+}
+
+/* Work Styles */
+
+section#work {
+    background-image: url("pixel_back_green.jpg");
+    background-size: 1%;
+    border: inset darkgray 2px;
+}
+
+#work h1 {
     color: darkgray;
     text-align: center;
     font-size: 2.5em;
@@ -121,7 +152,7 @@ section#resume {
 /* Skillset Styles */
 
 section#skills {
-    background-image: url("pixel_back.jpg");
+    background-image: url("pixel_back_yellow.jpg");
     background-size: 1%;
     border: inset darkgray 2px;
 }
@@ -136,7 +167,7 @@ section#skills {
 /* Contact Styles */
 
 footer#contact {
-    background-image: url("pixel_back.jpg");
+    background-image: url("pixel_back_blue.jpg");
     background-size: 1%;
     border: inset darkgray 2px;
 }
@@ -147,3 +178,59 @@ footer#contact {
     font-size: 2.5em;
     text-shadow: 2px 2px black;
 }
+
+
+
+/* Create a personal resume website of no less than 4 complete pages using HTML5 and CSS3
+Apply resume writing techniques and skills learned in the “West-MEC Resume Workshop” to develop these pages
+Compose a landing page with a solvent personal profile 
+Embed no less than three letters/statements of recommendation from teachers, managers, or other leader from the community
+Develop a portfolio page, showcasing original work completed throughout the West-MEC Coding Program or from work completed outside of West-MEC
+Add interactivity using JavaScript - a form, multiple pop-up windows, a counter or image carousel, etc. 
+NOTE: Additional steps WILL be added throughout the Coding Program!!!
+
+This is an example of the product you might create
+
+Some additional examples of exceptional personal resume websites/portfolios of developers can be found by clicking here. 
+
+These are just examples of what your websites might one day look like. There is no expectation for you to make it look like a professional developer with years of experience. 
+
+
+SPECIFICATIONS
+Site Map & Pages
+Go to https://github.com/h5bp/html5-boilerplate and follow instructions to either download or clone the repository for the HTML5 Boilerplate. This is the template that you can use to quickly start and scale up your front-end design projects. 
+Basically, you’re going to transform each section of your resume into a page on your website. So, your home page might be akin to an objective or summary statement—giving visitors a high-level overview of who you are, what you do, and what you’re looking for. Then, you’ll create a page for your experience, your skills, your education, your achievements, even your hobbies if you want to share a little of your personality—each of which will show up in your site menu, making it easy for hiring managers to find the information they’re looking for.
+For the text on each page, start by copying and pasting the text from your resume—but then think of ways to style or bulk it up to look a little nicer on the web. This could range from putting the name of each company you’ve worked for in a header font that stands out to using icons to visualize each of your skills. And don’t forget to add links to companies you’ve worked with and projects you’ve worked on when applicable—this is meant to be more dynamic than your paper resume.
+Also consider ways to make each page feel a little more cohesive and stand-alone. This might mean having a beautiful image related to the work that you do at the top. Or, you could include a short summary before diving into the bullet points and specifics.
+No matter how you go about styling each page, you want to make sure hiring managers can reach out once they see how awesome you are. So, don’t forget to make a page with your contact information and social profiles as well, and include a button at the bottom of all of the other pages directing people there.
+
+
+Bio
+Created a short biography. Nothing too personal. Just something that a person who wants to get to know the basics about you can read in 30 seconds. 
+Spell check all of your work, many times
+
+
+Education
+List your educational experiences and any accolades or awards you may be proud of.
+
+
+Skills
+List the web-development skills that you possess (i.e. HTML5, CSS3, JavaScript, Version Control, technical writing, etc.)
+List any other skills you might possess that are relevant to achieving gainful employment. 
+
+
+Work Experience
+Then, starting from your most recent work experience to your least, create a section for each place you’ve worked. Feel free to throw relevant volunteer work, side projects, or other personal achievements into the timeline if you want—just make sure to keep it all in order so someone is scrolling through your professional past as they go down your page.
+As you’re building out each section, start with your standard bullet points explaining what you did, but then think of ways to add a little oomph. Maybe that’s adding testimonial pull quotes from bosses or co-workers at past jobs. If you have a particularly visual job, you could add a mini portfolio to each role, using a gallery to show specific examples of your work at that company. You could add infographic elements showing off your achievements, videos of speaking gigs you did, a stream of tweets or Instagrams you helped produce—the possibilities are endless (and the right thing for you is going to vary by industry), so get creative!
+And, again, you want to make sure people can reach out to you, so include you contact information somewhere on the page—or even in the header so it’s front and center and easy to find.
+Once you have your ready to go, don’t be afraid to share it! Add the URL to your paper resume, your LinkedIn profile, your social media accounts, really anywhere recruiters or hiring managers could potentially find you.
+
+
+Project Submittal Instructions
+Review
+[What should students do before they submit?]
+Submittal
+[How would you like it turned in? Which software would you like them to use to get their final product to you?]
+Special Considerations/Notes
+[Is there anything that the students should be aware of that is out of the ordinary?]
+ */
