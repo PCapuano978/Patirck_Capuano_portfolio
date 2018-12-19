@@ -118,7 +118,7 @@ nav li a {
     color: lavender;
     text-shadow: 1px 1px black;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.75em;
 }
 
 /* The individual links in the navigation list have their rext-decoration removed, are lavender, are given a black
@@ -331,18 +331,18 @@ footer#contact {
 
 @media only screen and (max-width: 640px) {
 
-/* Finally, we have our mobile style that target devices with less than 640px in total screen width for better viewing
+    /* Finally, we have our mobile style that target devices with less than 640px in total screen width for better viewing
 experinces on those platforms. */
 
     img {
-    display: none;
+        display: none;
     }
 
     /* This is done first by getting rid of all images that would otherwise clutter up the website columns. */
 
     nav ul {
-        font-size: .7em;
-        padding-bottom: 4em;
+        padding-bottom: 3em;
+        font-size: .75em;
     }
 
     /* And second, the navigation bar is fixed by having the text be smaller in size fitting into the lengthened padding. */
