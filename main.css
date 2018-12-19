@@ -11,9 +11,14 @@ html {
     position: relative;
 }
 
+/* The background image is set in and is very tiny to give a unique tile effect that will be rpeatible seen throughout the pages.
+The page is also given a relative page positioning. */
+
 body {
     width: 100%;
 }
+
+/* Body width is set to take up the whole page's amount. */
 
 .clearfix:after {
     content: "";
@@ -21,22 +26,37 @@ body {
     clear: both;
 }
 
+/* Universal container collpase fail safe put in after all pages. */
+
 hr {
     text-align: center;
     border-color: black;
-
     width: 25%;
     height: 1px;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.4em;
 }
+
+/* Black horizontal breaks with the specificed sizes are placed frequently in the page to break up the sections.  */
 
 hr.pagetop {
     margin-top: 3em;
 }
 
+/* Specified heading breaks push the tops of pages even further. */
+
 hr.pagebottom {
     margin-bottom: 3em;
 }
+
+/* Specified heading breaks push the bottoms of pages even further. */
+
+img.label {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+/* All images are set to have at max a three hundred by three hundred pixel display */
+
 
 /* Home & Nav Styles */
 
@@ -48,8 +68,11 @@ h1#name {
     text-align: center;
     font-size: 5em;
     text-shadow: 3px 3px black;
-    opacity: 1;
+    opacity: .8;
 }
+
+/* The main name h1 element pushes the padding up and down by 1.7 ems, is darkgrat and centered, has a size
+of 5em, and is given a text shadow three pixels displaced horizontally and vertically alongside slight transparency.  */
 
 section#home {
     padding: 6em 0em 6em 0em;
@@ -57,6 +80,10 @@ section#home {
     background-image: radial-gradient(rgba(0, 0, 0, .7) 40%, rgba(255, 255, 255, .4) 60%, rgba(0, 0, 0, .7) 80%, rgba(255, 255, 255, .40) 100%);
     filter: drop-shadow(5px 5px 4px rgba(255, 255, 255, .7));
 }
+
+/* The section in the home is given horizontal padding of 6em, no margins, a background gradient
+that goes from transpaent black to transparent white back and forth,
+and a filter to give it drop shadows on the edges. */
 
 nav ul {
     text-align: center;
@@ -73,11 +100,18 @@ nav ul {
     border: solid 1px aqua;
 }
 
+/* The manin navigation tab has its text cented, with big horizontal padding alongside slight bottom padding, takes up
+the full screen width, has a height of 1 em, a perfectly centered margin space, no list decorations, a font-family
+list as such, given another tile background with only 2% in size; all of which is fixed and always in-front with a border
+that is solid with 1px that is aqua colored. */
+
 nav li {
     padding: 0 3%;
     text-align: center;
     display: inline-block;
 }
+
+/* The list items in the navigation tab are fiven 3% horizontal padding, center alignment, and an inline-block display. */
 
 nav li a {
     text-decoration: none;
@@ -87,10 +121,15 @@ nav li a {
     font-size: 2em;
 }
 
+/* The individual links in the navigation list have their rext-decoration removed, are lavender, are given a black
+text-shadow with 1px on both offsets, font-weight to bold, and a font-size of 2em. */
+
 nav ul a:hover {
     color: black;
     text-shadow: 1px 1px white;
 }
+
+/* If you are to hover on the navigation list items, they are to have their font color and font shadow color inverted. */
 
 
 /* About Styles */
@@ -102,6 +141,9 @@ section#about {
     border: inset darkgray 2px;
 }
 
+/* Our first section, the about page, has a black tiled background put in place with a 2px, inset, darkgray border
+that will be shared with the rest of the elements. */
+
 #about h1 {
     text-align: center;
     float: center;
@@ -112,6 +154,9 @@ section#about {
     -webkit-text-fill-color: black;
 }
 
+/* The h1s starting with this one have their text alinged to the center, alongside getting flated their, text colors of
+darkgray, font-sizes of 3em, black text-shadows with 2px offsets, and finally 1px color outlines of black.  */
+
 #about h2 {
     text-align: center;
     color: darkgray;
@@ -119,19 +164,29 @@ section#about {
     text-shadow: 2px 2px black;
 }
 
+/* An h2 element exclusive to this part has its text also centered, is darkgray in color, has a font-size of 2.5em,
+and has a text-shadow with 2px offsets that is black. */
+
 #about img {
     float: right;
     padding: 0 3% 3%;
 }
 
+/* Every odd numbered page starting with the about section will have their image floated to the right, and padded out
+every direction, but up with 3% of space. */
+
 #about div.text {
     padding: 2%;
-    font-size: 1.7em;
+    font-size: 2em;
     color: black;
-    text-shadow: 1px 1px;
-    -webkit-text-stroke: .3px;
+    text-shadow: 1px 1px black;
+    -webkit-text-stroke: .4px;
     -webkit-text-fill-color: darkgray;
 }
+
+/* Our last element in a group shall be its text established by a class of "text" to target. These paragraphs will have
+padding all around of 2%, black text-color, a black shadow as well offset by 2px both directions, and a font outline
+that will be .4 subpixles in lenth and darkgray.  */
 
 /* Education Styles */
 
@@ -142,10 +197,13 @@ section#education {
     border: inset darkgray 2px;
 }
 
+/* Style rules will now start to look like they are repeating, with the exception of their starting ID.
+The starting style rule however will have a different image tiled in the background, this time colored purple. */
+
 #education h1 {
     color: darkgray;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
     text-shadow: 2px 2px black;
     -webkit-text-stroke: 1px;
     -webkit-text-fill-color: black;
@@ -153,10 +211,10 @@ section#education {
 
 #education div.text {
     padding: 2%;
-    font-size: 1.7em;
+    font-size: 2em;
     color: black;
     text-shadow: 1px 1px;
-    -webkit-text-stroke: .3px;
+    -webkit-text-stroke: .4px;
     -webkit-text-fill-color: darkgray;
 }
 
@@ -164,6 +222,9 @@ section#education {
     float: left;
     padding: 0 3% 3%;
 }
+
+/* Every even numbered page will have their image floaded to the left of the text as opposed to the right instead.
+this is to give a distict pattern to the structures. */
 
 /* Work Styles */
 
@@ -174,10 +235,12 @@ section#work {
     border: inset darkgray 2px;
 }
 
+/* This section is specifically called to have a green tiling background instead. */
+
 #work h1 {
     color: darkgray;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
     text-shadow: 2px 2px black;
     -webkit-text-stroke: 1px;
     -webkit-text-fill-color: black;
@@ -185,10 +248,10 @@ section#work {
 
 #work div.text {
     padding: 2%;
-    font-size: 1.7em;
+    font-size: 2em;
     color: black;
-    text-shadow: 1px 1px;
-    -webkit-text-stroke: .3px;
+    text-shadow: 1px 1px black;
+    -webkit-text-stroke: .4px;
     -webkit-text-fill-color: darkgray;
 }
 
@@ -206,10 +269,12 @@ section#skills {
     border: inset darkgray 2px;
 }
 
+/* Next up, this section will have its new tiling be the color yellow to continue the trend. */
+
 #skills h1 {
     color: darkgray;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
     text-shadow: 2px 2px black;
     -webkit-text-stroke: 1px;
     -webkit-text-fill-color: black;
@@ -217,10 +282,10 @@ section#skills {
 
 #skills div.text {
     padding: 2%;
-    font-size: 1.7em;
+    font-size: 2em;
     color: black;
-    text-shadow: 1px 1px;
-    -webkit-text-stroke: .3px;
+    text-shadow: 1px 1px black;
+    -webkit-text-stroke: .4px;
     -webkit-text-fill-color: darkgray;
 }
 
@@ -241,7 +306,7 @@ footer#contact {
 #contact h1 {
     color: darkgray;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
     text-shadow: 2px 2px black;
     -webkit-text-stroke: 1px;
     -webkit-text-fill-color: black;
@@ -249,10 +314,10 @@ footer#contact {
 
 #contact div.text {
     padding: 2%;
-    font-size: 1.7em;
+    font-size: 2em;
     color: black;
-    text-shadow: 1px 1px;
-    -webkit-text-stroke: .3px;
+    text-shadow: 1px 1px black;
+    -webkit-text-stroke: .4px;
     -webkit-text-fill-color: darkgray;
 }
 
@@ -262,56 +327,24 @@ footer#contact {
 }
 
 
-/* Create a personal resume website of no less than 4 complete pages using HTML5 and CSS3
-Apply resume writing techniques and skills learned in the “West-MEC Resume Workshop” to develop these pages
-Compose a landing page with a solvent personal profile 
-Embed no less than three letters/statements of recommendation from teachers, managers, or other leader from the community
-Develop a portfolio page, showcasing original work completed throughout the West-MEC Coding Program or from work completed outside of West-MEC
-Add interactivity using JavaScript - a form, multiple pop-up windows, a counter or image carousel, etc. 
-NOTE: Additional steps WILL be added throughout the Coding Program!!!
+/* Mobile styles */
 
-This is an example of the product you might create
+@media only screen and (max-width: 640px) {
 
-Some additional examples of exceptional personal resume websites/portfolios of developers can be found by clicking here. 
+/* Finally, we have our mobile style that target devices with less than 640px in total screen width for better viewing
+experinces on those platforms. */
 
-These are just examples of what your websites might one day look like. There is no expectation for you to make it look like a professional developer with years of experience. 
+    img {
+    display: none;
+    }
 
+    /* This is done first by getting rid of all images that would otherwise clutter up the website columns. */
 
-SPECIFICATIONS
-Site Map & Pages
-Go to https://github.com/h5bp/html5-boilerplate and follow instructions to either download or clone the repository for the HTML5 Boilerplate. This is the template that you can use to quickly start and scale up your front-end design projects. 
-Basically, you’re going to transform each section of your resume into a page on your website. So, your home page might be akin to an objective or summary statement—giving visitors a high-level overview of who you are, what you do, and what you’re looking for. Then, you’ll create a page for your experience, your skills, your education, your achievements, even your hobbies if you want to share a little of your personality—each of which will show up in your site menu, making it easy for hiring managers to find the information they’re looking for.
-For the text on each page, start by copying and pasting the text from your resume—but then think of ways to style or bulk it up to look a little nicer on the web. This could range from putting the name of each company you’ve worked for in a header font that stands out to using icons to visualize each of your skills. And don’t forget to add links to companies you’ve worked with and projects you’ve worked on when applicable—this is meant to be more dynamic than your paper resume.
-Also consider ways to make each page feel a little more cohesive and stand-alone. This might mean having a beautiful image related to the work that you do at the top. Or, you could include a short summary before diving into the bullet points and specifics.
-No matter how you go about styling each page, you want to make sure hiring managers can reach out once they see how awesome you are. So, don’t forget to make a page with your contact information and social profiles as well, and include a button at the bottom of all of the other pages directing people there.
+    nav ul {
+        font-size: .7em;
+        padding-bottom: 4em;
+    }
 
+    /* And second, the navigation bar is fixed by having the text be smaller in size fitting into the lengthened padding. */
 
-Bio
-Created a short biography. Nothing too personal. Just something that a person who wants to get to know the basics about you can read in 30 seconds. 
-Spell check all of your work, many times
-
-
-Education
-List your educational experiences and any accolades or awards you may be proud of.
-
-
-Skills
-List the web-development skills that you possess (i.e. HTML5, CSS3, JavaScript, Version Control, technical writing, etc.)
-List any other skills you might possess that are relevant to achieving gainful employment. 
-
-
-Work Experience
-Then, starting from your most recent work experience to your least, create a section for each place you’ve worked. Feel free to throw relevant volunteer work, side projects, or other personal achievements into the timeline if you want—just make sure to keep it all in order so someone is scrolling through your professional past as they go down your page.
-As you’re building out each section, start with your standard bullet points explaining what you did, but then think of ways to add a little oomph. Maybe that’s adding testimonial pull quotes from bosses or co-workers at past jobs. If you have a particularly visual job, you could add a mini portfolio to each role, using a gallery to show specific examples of your work at that company. You could add infographic elements showing off your achievements, videos of speaking gigs you did, a stream of tweets or Instagrams you helped produce—the possibilities are endless (and the right thing for you is going to vary by industry), so get creative!
-And, again, you want to make sure people can reach out to you, so include you contact information somewhere on the page—or even in the header so it’s front and center and easy to find.
-Once you have your ready to go, don’t be afraid to share it! Add the URL to your paper resume, your LinkedIn profile, your social media accounts, really anywhere recruiters or hiring managers could potentially find you.
-
-
-Project Submittal Instructions
-Review
-[What should students do before they submit?]
-Submittal
-[How would you like it turned in? Which software would you like them to use to get their final product to you?]
-Special Considerations/Notes
-[Is there anything that the students should be aware of that is out of the ordinary?]
- */
+}
