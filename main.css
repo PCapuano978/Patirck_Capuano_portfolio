@@ -87,7 +87,7 @@ and a filter to give it drop shadows on the edges. */
 
 nav ul {
     text-align: center;
-    padding: 0em .8em 1em .8em;
+    padding: 0em .3em .5em .3em;
     width: 100%;
     height: 1em;
     margin: 0 auto;
@@ -118,7 +118,7 @@ nav li a {
     color: lavender;
     text-shadow: 1px 1px black;
     font-weight: bold;
-    font-size: 1.75em;
+    font-size: 1.5em;
 }
 
 /* The individual links in the navigation list have their rext-decoration removed, are lavender, are given a black
@@ -341,8 +341,8 @@ experinces on those platforms. */
     /* This is done first by getting rid of all images that would otherwise clutter up the website columns. */
 
     nav ul {
-        padding-bottom: 3em;
-        font-size: .75em;
+        padding-bottom: 2.5em;
+        font-size: 1em;
     }
 
     /* And second, the navigation bar is fixed by having the text be smaller in size fitting into the lengthened padding. */
