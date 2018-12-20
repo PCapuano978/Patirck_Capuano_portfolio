@@ -11,8 +11,7 @@ html {
     position: relative;
 }
 
-/* The background image is set in and is very tiny to give a unique tile effect that will be rpeatible seen throughout the pages.
-The page is also given a relative page positioning. */
+/* The background image is set in and is very tiny to give a unique tile effect that will be rpeatible seen throughout the pages. The page is also given a relative page positioning. */
 
 body {
     width: 100%;
@@ -20,11 +19,37 @@ body {
 
 /* Body width is set to take up the whole page's amount. */
 
+div.text {
+    text-align: center;
+}
+
+/* All informational text in the div elements, further classified by the "text" class, will have centered text across the pages.  */
+
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
 }
+
+a.special {
+    font-size: 1.25em;
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: black;
+}
+
+/* All links with the tag of "special" have a font style of 1.25em with black 1 pixel outline strokes. */
+
+a.special:visited {
+    color: white;
+}
+
+/* The speical links regardless of being visted or not, are to be always be the white color. */
+
+a.special:hover {
+    color: aqua;
+}
+
+/* When the cursor hovers over the special links, they will have their color changed to aqua. */
 
 /* Universal container collpase fail safe put in after all pages. */
 
@@ -71,8 +96,7 @@ h1#name {
     opacity: .8;
 }
 
-/* The main name h1 element pushes the padding up and down by 1.7 ems, is darkgrat and centered, has a size
-of 5em, and is given a text shadow three pixels displaced horizontally and vertically alongside slight transparency.  */
+/* The main name h1 element pushes the padding up and down by 1.7 ems, is darkgrat and centered, has a size of 5em, and is given a text shadow three pixels displaced horizontally and vertically alongside slight transparency.  */
 
 section#home {
     padding: 6em 0em 6em 0em;
@@ -82,8 +106,7 @@ section#home {
 }
 
 /* The section in the home is given horizontal padding of 6em, no margins, a background gradient
-that goes from transpaent black to transparent white back and forth,
-and a filter to give it drop shadows on the edges. */
+that goes from transpaent black to transparent white back and forth, and a filter to give it drop shadows on the edges. */
 
 nav ul {
     text-align: center;
@@ -100,10 +123,7 @@ nav ul {
     border: solid 1px aqua;
 }
 
-/* The manin navigation tab has its text cented, with big horizontal padding alongside slight bottom padding, takes up
-the full screen width, has a height of 1 em, a perfectly centered margin space, no list decorations, a font-family
-list as such, given another tile background with only 2% in size; all of which is fixed and always in-front with a border
-that is solid with 1px that is aqua colored. */
+/* The manin navigation tab has its text cented, with big horizontal padding alongside slight bottom padding, takes up the full screen width, has a height of 1 em, a perfectly centered margin space, no list decorations, a font-family list as such, given another tile background with only 2% in size; all of which is fixed and always in-front with a border that is solid with 1px that is aqua colored. */
 
 nav li {
     padding: 0 3%;
@@ -121,8 +141,7 @@ nav li a {
     font-size: 1.5em;
 }
 
-/* The individual links in the navigation list have their rext-decoration removed, are lavender, are given a black
-text-shadow with 1px on both offsets, font-weight to bold, and a font-size of 2em. */
+/* The individual links in the navigation list have their rext-decoration removed, are lavender, are given a black text-shadow with 1px on both offsets, font-weight to bold, and a font-size of 2em. */
 
 nav ul a:hover {
     color: black;
@@ -141,39 +160,36 @@ section#about {
     border: inset darkgray 2px;
 }
 
-/* Our first section, the about page, has a black tiled background put in place with a 2px, inset, darkgray border
-that will be shared with the rest of the elements. */
+/* Our first section, the about page, has a black tiled background put in place with a 2px, inset, darkgray border that will be shared with the rest of the elements. */
 
 #about h1 {
     text-align: center;
     float: center;
     color: darkgray;
-    font-size: 3em;
+    font-size: 3.5em;
     text-shadow: 2px 2px black;
     -webkit-text-stroke: 1px;
     -webkit-text-fill-color: black;
 }
 
-/* The h1s starting with this one have their text alinged to the center, alongside getting flated their, text colors of
-darkgray, font-sizes of 3em, black text-shadows with 2px offsets, and finally 1px color outlines of black.  */
+/* The h1s starting with this one have their text alinged to the center, alongside getting flated their, text colors of darkgray, font-sizes of 3.5em, black text-shadows with 2px offsets, and finally 1px color outlines of black.  */
 
 #about h2 {
     text-align: center;
     color: darkgray;
+    padding-bottom: 1em;
     font-size: 2.5em;
     text-shadow: 2px 2px black;
 }
 
-/* An h2 element exclusive to this part has its text also centered, is darkgray in color, has a font-size of 2.5em,
-and has a text-shadow with 2px offsets that is black. */
+/* An h2 element exclusive to this part has its text also centered, is darkgray in color, posses a bottom padding of 1em, has a font-size of 2.5em, and has a text-shadow with 2px offsets that is black. */
 
 #about img {
     float: right;
     padding: 0 3% 3%;
 }
 
-/* Every odd numbered page starting with the about section will have their image floated to the right, and padded out
-every direction, but up with 3% of space. */
+/* Every odd numbered page starting with the about section will have their image floated to the right, and padded out every direction, but up with 3% of space. */
 
 #about div.text {
     padding: 2%;
@@ -184,9 +200,7 @@ every direction, but up with 3% of space. */
     -webkit-text-fill-color: darkgray;
 }
 
-/* Our last element in a group shall be its text established by a class of "text" to target. These paragraphs will have
-padding all around of 2%, black text-color, a black shadow as well offset by 2px both directions, and a font outline
-that will be .4 subpixles in lenth and darkgray.  */
+/* Our last element in a group shall be its text established by a class of "text" to target. These paragraphs will have padding all around of 2%, black text-color, a black shadow as well offset by 2px both directions, and a font outline that will be .4 subpixles in lenth and darkgray.  */
 
 /* Education Styles */
 
@@ -203,7 +217,7 @@ The starting style rule however will have a different image tiled in the backgro
 #education h1 {
     color: darkgray;
     text-align: center;
-    font-size: 3em;
+    font-size: 3.5em;
     text-shadow: 2px 2px black;
     -webkit-text-stroke: 1px;
     -webkit-text-fill-color: black;
@@ -223,8 +237,7 @@ The starting style rule however will have a different image tiled in the backgro
     padding: 0 3% 3%;
 }
 
-/* Every even numbered page will have their image floaded to the left of the text as opposed to the right instead.
-this is to give a distict pattern to the structures. */
+/* Every even numbered page will have their image floaded to the left of the text as opposed to the right instead. this is to give a distict pattern to the structures. */
 
 /* Work Styles */
 
@@ -274,7 +287,7 @@ section#skills {
 #skills h1 {
     color: darkgray;
     text-align: center;
-    font-size: 3em;
+    font-size: 3.5em;
     text-shadow: 2px 2px black;
     -webkit-text-stroke: 1px;
     -webkit-text-fill-color: black;
@@ -331,14 +344,19 @@ footer#contact {
 
 @media only screen and (max-width: 640px) {
 
-    /* Finally, we have our mobile style that target devices with less than 640px in total screen width for better viewing
-experinces on those platforms. */
+    /* Finally, we have our mobile style that target devices with less than 640px in total screen width for better viewing experinces on those platforms. */
 
     img {
         display: none;
     }
 
     /* This is done first by getting rid of all images that would otherwise clutter up the website columns. */
+
+    div.text {
+        margin: 1em 0;
+    }
+
+    /* The main informational text has its line adjusted to space its content more apart in mobile mode thanks to an inclusion of a 1em margin. */
 
     nav ul {
         padding-bottom: 2.5em;
